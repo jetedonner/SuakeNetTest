@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5532217F2614F87500529E8D /* NetworkDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532217E2614F87500529E8D /* NetworkDataTypes.swift */; };
+		55322188261502F500529E8D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55322187261502F500529E8D /* GameKit.framework */; };
+		5532218F2616421B00529E8D /* LoadLevelNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532218E2616421B00529E8D /* LoadLevelNetworkData.swift */; };
+		553221A1261642BB00529E8D /* LevelDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532219C261642BB00529E8D /* LevelDifficulty.swift */; };
+		553221A2261642BB00529E8D /* LightTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532219D261642BB00529E8D /* LightTypes.swift */; };
+		553221A3261642BB00529E8D /* SkyboxType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532219E261642BB00529E8D /* SkyboxType.swift */; };
+		553221A4261642BB00529E8D /* LevelSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532219F261642BB00529E8D /* LevelSize.swift */; };
+		553221A5261642BB00529E8D /* FloorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553221A0261642BB00529E8D /* FloorType.swift */; };
 		55C96C052613B42200BACA73 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C96C042613B42200BACA73 /* main.swift */; };
+		55C96C0E2613B44100BACA73 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C96C0C2613B44100BACA73 /* NetworkHelper.swift */; };
+		55C96C0F2613B44100BACA73 /* BaseNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C96C0D2613B44100BACA73 /* BaseNetworkData.swift */; };
+		55C96C122613B7C500BACA73 /* TurnNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C96C112613B7C500BACA73 /* TurnNetworkData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +34,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5532217E2614F87500529E8D /* NetworkDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataTypes.swift; sourceTree = "<group>"; };
+		553221832614FA9C00529E8D /* NetworkAnalysis.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = NetworkAnalysis.rtf; sourceTree = "<group>"; };
+		553221842615026D00529E8D /* SuakeNetTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SuakeNetTest.entitlements; sourceTree = "<group>"; };
+		55322187261502F500529E8D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		5532218E2616421B00529E8D /* LoadLevelNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadLevelNetworkData.swift; sourceTree = "<group>"; };
+		5532219C261642BB00529E8D /* LevelDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDifficulty.swift; sourceTree = "<group>"; };
+		5532219D261642BB00529E8D /* LightTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTypes.swift; sourceTree = "<group>"; };
+		5532219E261642BB00529E8D /* SkyboxType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyboxType.swift; sourceTree = "<group>"; };
+		5532219F261642BB00529E8D /* LevelSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSize.swift; sourceTree = "<group>"; };
+		553221A0261642BB00529E8D /* FloorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorType.swift; sourceTree = "<group>"; };
 		55C96C012613B42200BACA73 /* SuakeNetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SuakeNetTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C96C042613B42200BACA73 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		55C96C0C2613B44100BACA73 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		55C96C0D2613B44100BACA73 /* BaseNetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkData.swift; sourceTree = "<group>"; };
+		55C96C112613B7C500BACA73 /* TurnNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnNetworkData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +56,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55322188261502F500529E8D /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553221822614FA7C00529E8D /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				553221832614FA9C00529E8D /* NetworkAnalysis.rtf */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		55322186261502F500529E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55322187261502F500529E8D /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5532218D261641F500529E8D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				553221A82616430100529E8D /* SuakeDataTypes */,
+				5532217E2614F87500529E8D /* NetworkDataTypes.swift */,
+				55C96C0D2613B44100BACA73 /* BaseNetworkData.swift */,
+				55C96C112613B7C500BACA73 /* TurnNetworkData.swift */,
+				5532218E2616421B00529E8D /* LoadLevelNetworkData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		553221A82616430100529E8D /* SuakeDataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				5532219F261642BB00529E8D /* LevelSize.swift */,
+				553221A0261642BB00529E8D /* FloorType.swift */,
+				5532219C261642BB00529E8D /* LevelDifficulty.swift */,
+				5532219D261642BB00529E8D /* LightTypes.swift */,
+				5532219E261642BB00529E8D /* SkyboxType.swift */,
+			);
+			path = SuakeDataTypes;
+			sourceTree = "<group>";
+		};
 		55C96BF82613B42200BACA73 = {
 			isa = PBXGroup;
 			children = (
+				553221822614FA7C00529E8D /* Docs */,
 				55C96C032613B42200BACA73 /* SuakeNetTest */,
 				55C96C022613B42200BACA73 /* Products */,
+				55322186261502F500529E8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +124,9 @@
 		55C96C032613B42200BACA73 /* SuakeNetTest */ = {
 			isa = PBXGroup;
 			children = (
+				5532218D261641F500529E8D /* Data */,
+				553221842615026D00529E8D /* SuakeNetTest.entitlements */,
+				55C96C0C2613B44100BACA73 /* NetworkHelper.swift */,
 				55C96C042613B42200BACA73 /* main.swift */,
 			);
 			path = SuakeNetTest;
@@ -119,7 +189,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553221A2261642BB00529E8D /* LightTypes.swift in Sources */,
+				553221A4261642BB00529E8D /* LevelSize.swift in Sources */,
+				55C96C0E2613B44100BACA73 /* NetworkHelper.swift in Sources */,
 				55C96C052613B42200BACA73 /* main.swift in Sources */,
+				55C96C0F2613B44100BACA73 /* BaseNetworkData.swift in Sources */,
+				5532218F2616421B00529E8D /* LoadLevelNetworkData.swift in Sources */,
+				553221A1261642BB00529E8D /* LevelDifficulty.swift in Sources */,
+				5532217F2614F87500529E8D /* NetworkDataTypes.swift in Sources */,
+				553221A3261642BB00529E8D /* SkyboxType.swift in Sources */,
+				553221A5261642BB00529E8D /* FloorType.swift in Sources */,
+				55C96C122613B7C500BACA73 /* TurnNetworkData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +324,7 @@
 		55C96C092613B42200BACA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SuakeNetTest/SuakeNetTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB7SHXTJHG;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -255,6 +336,7 @@
 		55C96C0A2613B42200BACA73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SuakeNetTest/SuakeNetTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PB7SHXTJHG;
 				ENABLE_HARDENED_RUNTIME = YES;

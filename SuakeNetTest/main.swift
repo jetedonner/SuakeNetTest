@@ -7,5 +7,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+print(" #### Suake3D NetTestCLS #### ")
+let netHelper:NetworkHelper = NetworkHelper()
