@@ -7,13 +7,28 @@
 
 import Foundation
 
-enum SkyboxType:String {
+enum SkyboxType:Int, Codable {
     
-    case GreenSky = "Green sky"
-    case PinkSunrise = "Pink sunrise"
-    case RedGalaxy = "Red galaxy"
-    case YellowGalaxy = "Yellow galaxy"
-    case RandomSkyBox = "A random skybox"
+    case GreenSky =     1 //"Green sky"
+    case PinkSunrise =  2 //"Pink sunrise"
+    case RedGalaxy =    3 //"Red galaxy"
+    case YellowGalaxy = 4 //"Yellow galaxy"
+    case RandomSkyBox = 5 //"A random skybox"
+    
+    func toString()->String{
+        switch self {
+        case .GreenSky:
+            return "Green sky"
+        case .PinkSunrise:
+            return "Pink sunrise"
+        case .RedGalaxy:
+            return "Red galaxy"
+        case .YellowGalaxy:
+            return "Yellow galaxy"
+        case .RandomSkyBox:
+            return "A random skybox"
+        }
+    }
     
     static var allSkyboxes: [SkyboxType] {
         return [.GreenSky, .PinkSunrise, .RedGalaxy, .YellowGalaxy]

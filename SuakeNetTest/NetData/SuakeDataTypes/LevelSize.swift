@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum LevelSize:Int {
+enum LevelSize:Int, Codable {
     case ExtraSmall = 1//  "10,10"
     case Small =      2//  "20,20"
     case Medium =     3//  "30,30"
     case Big =        4//  "40,40"
     case VeryBig =    5//  "50,50"
     case Huge =       6//  "70,70"
-    
+
 //    func getNSSize()->NSSize{
 //        NSSize.convertFromStringLiteral(value: self.rawValue)
 //    }
@@ -33,8 +33,6 @@ enum LevelSize:Int {
             return "50,50"
         case .Huge:
             return "70,70"
-//        default:
-//            return "20,20"
         }
     }
     

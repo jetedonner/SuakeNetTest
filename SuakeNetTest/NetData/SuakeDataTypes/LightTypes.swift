@@ -9,7 +9,7 @@
 import Foundation
 import SceneKit
 
-enum LightIntensity:CGFloat {
+enum LightIntensity:Float, Codable {
     case noLight =  0.0
     case low =      250.0
     case medium =   400.0

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NetTestFW
 
-print(" #### Suake3D NetTestCLS #### ")
+print(" #### Suake3D NetTestCLS (With Library) #### ")
 let netHelper:NetworkHelper = NetworkHelper()

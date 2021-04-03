@@ -8,13 +8,30 @@
 
 import Foundation
 
-enum LevelDifficulty:String {
-    case Tutorial = "Tutorial"
-    case Easy = "Easy"
-    case Medium = "Medium"
-    case Hard = "Hard"
-    case Nightmare = "Nightmare"
-    case Unreal = "Unreal"
+enum LevelDifficulty:Int, Codable {
+    case Tutorial =     1 //"Tutorial"
+    case Easy =         2 //"Easy"
+    case Medium =       3 //"Medium"
+    case Hard =         4 //"Hard"
+    case Nightmare =    5 //"Nightmare"
+    case Unreal =       6 //"Unreal"
+    
+    func toString()->String{
+        switch self {
+        case .Tutorial:
+            return "Tutorial"
+        case .Easy:
+            return "Easy"
+        case .Medium:
+            return "Medium"
+        case .Hard:
+            return "Hard"
+        case .Nightmare:
+            return "Nightmare"
+        case .Unreal:
+            return "Unreal"
+        }
+    }
     
     static func levelDifficulty(fromString:String)->LevelDifficulty{
         switch fromString {

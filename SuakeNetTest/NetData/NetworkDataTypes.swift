@@ -11,6 +11,7 @@ enum MsgType : Int, Codable{
     case initMsg = 1
     case initLevelMsg = 2
     case turnMsg = 3
+    case endMatchMsg = 4
 }
 
 enum TurnDir : Int, Codable{
